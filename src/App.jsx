@@ -1,11 +1,13 @@
-import React from 'react'
+import Todo from "./Compnents/todo";
+import "./App.css";
 
-const App = () => {
+
+function App() {
   return (
     <div>
-      hii
+      <Todo />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
