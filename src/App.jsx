@@ -1,14 +1,16 @@
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Todo from "./Compnents/todo";
-import "./App.css";
 import Search from "./Compnents/movie";
 
 function App() {
   return (
-    <div>
-      <Todo />
-      <Search />
-    
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/todo" element={<Todo />} />
+        <Route path="/movie-explorer" element={<Search />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
